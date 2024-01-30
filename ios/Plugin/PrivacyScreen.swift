@@ -70,7 +70,7 @@ import UIKit
 
             let blurEffect = UIBlurEffect(style: .regular) // Elige el estilo de desenfoque que prefieras
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
-            blurEffectView.frame = window.bounds
+            blurEffectView.frame = CGRect(x: 0, y: 0, width: privacyViewController.view.bounds.width, height: privacyViewController.view.bounds.height)
             blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 
             privacyViewController.view.addSubview(blurEffectView)
